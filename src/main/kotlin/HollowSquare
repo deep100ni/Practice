@@ -1,0 +1,15 @@
+fun hollowSquare(lines:Int) {
+    for (i in 1..lines) {
+        for (j in 1..lines) {
+            if (i == 1 || i == lines || j == 1 || j == lines) {
+                print("*")
+            } else {
+                print(" ")
+            }
+        }
+        println()
+    }
+}
+fun main(){
+    hollowSquare(10)
+}
