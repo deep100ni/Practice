@@ -1,15 +1,13 @@
-fun hollowSquare(lines:Int) {
-    for (i in 1..lines) {
-        for (j in 1..lines) {
-            if (i == 1 || i == lines || j == 1 || j == lines) {
-                print("*")
-            } else {
-                print(" ")
-            }
-        }
-        println()
+fun printHoloSquare(size: Int) {
+    println("*".repeat(size))
+    for (i in 2 until size) {
+        println("*" + " ".repeat(size - 2) + "*")
+    }
+    if (size > 1) {
+        println("*".repeat(size))
     }
 }
-fun main(){
-    hollowSquare(10)
+
+fun main() {
+    printHoloSquare(5)
 }
