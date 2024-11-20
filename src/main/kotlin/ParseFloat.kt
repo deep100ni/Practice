@@ -1,3 +1,7 @@
+import java.lang.Math.pow
+import kotlin.math.pow
+import kotlin.math.roundToInt
+
 fun parseDigit(digit:Char):Int {
     if(digit in '0'..'9') return digit.code - 48 else return -1
 }
@@ -10,6 +14,17 @@ fun parseNumber(numstr: String):Int{
         }
     }
     return num
+}
+
+fun parseInt(num : String): Int {
+    var res = 0.0
+    var exp = num.length-1
+    for (c in num){
+        val d = parseDigit(c)
+        res += d * 10.0.pow(exp.toDouble())
+        exp--
+    }
+    return res.roundToInt()
 }
 
 fun fractionalPartDigit(numstr: String):Int{
@@ -45,5 +60,6 @@ fun parseDecimalNo(numstr: String):Float{
 }
 
 fun main(){
-    print(parseDecimalNo("."))
+//    print(parseDecimalNo("."))
+    println(parseInt("1234"))
 }
