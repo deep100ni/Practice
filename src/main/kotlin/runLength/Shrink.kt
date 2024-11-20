@@ -1,6 +1,8 @@
 package runLength
 
 fun shrink(str: String):String{
+    if (str.isBlank()) return ""
+
     return buildString {
         var count = 1
         var curr = str.first()
@@ -22,7 +24,7 @@ fun shrink(str: String):String{
 
 fun main() {
     println(
-        shrink("AABBBCDDDD")
+        shrink("")
     )
 
 }
