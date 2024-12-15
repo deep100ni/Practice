@@ -2,8 +2,15 @@
 This repository contains various Kotlin practice programs.
 
 - Ep 5
-  - [List Element At](src/main/kotlin/ep5/ListElementAt.kt)
-  - [List Null Element At](src/main/kotlin/ep5/ListNullElementAt.kt)
+  - Int List
+    - [List CalculateMean](src/main/kotlin/ep5/intList/CalculateMean.kt)
+    - [List Find All](src/main/kotlin/ep5/intList/FindAll.kt)
+    - [List Calculate Sum](src/main/kotlin/ep5/intList/ListCalculateSum.kt)
+    - [List Element At](src/main/kotlin/ep5/intList/ListElementAt.kt)
+    - [List Find](src/main/kotlin/ep5/intList/ListFind.kt)
+    - [List Find Max](src/main/kotlin/ep5/intList/ListFindMax.kt)
+    - [List Find Min](src/main/kotlin/ep5/intList/ListFindMin.kt)
+    - [List Null Element At](src/main/kotlin/ep5/intList/ListNullElementAt.kt)
 - RunLength
   - [Expand](src/main/kotlin/runLength/Expand.kt)
   - [Shrink](src/main/kotlin/runLength/Shrink.kt)
